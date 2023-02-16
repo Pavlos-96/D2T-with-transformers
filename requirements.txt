@@ -1,0 +1,9 @@
+transformers
+pytorch-lightning==1.6.0
+seaborn
+wandb
+sklearn
+pandas
+seaborn
+matplotlib
+sentencepiece
