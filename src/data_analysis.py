@@ -97,25 +97,25 @@ def main(webnlg_original, webnlg, ax):
     webnlg_original = read_data(webnlg_original)
     webnlg = read_data(webnlg)
     ax = read_data(ax)
-#     analysis = {"ax": {"Nb. Input": get_num_input(ax), "Nb. Data-Text Pairs": get_num_data_text(ax), "Nb. Domains": 4, "Nb. Attributes": get_num_attr(ax, "ax"), "Nb. Input Patterns": get_num_input_pattern(ax, "ax"), "Nb. Input / Nb Input Pattern": get_num_input(ax)/get_num_input_pattern(ax, "ax")},
-#                "webnlg": {"Nb. Input": get_num_input(webnlg), "Nb. Data-Text Pairs": get_num_data_text(webnlg), "Nb. Domains": 10, "Nb. Attributes": get_num_attr(webnlg, "webnlg"), "Nb. Input Patterns": get_num_input_pattern(webnlg, "webnlg"), "Nb. Input / Nb Input Pattern": get_num_input(webnlg)/get_num_input_pattern(webnlg, "webnlg")},
-#                "webnlg_original": {"Nb. Input": get_num_input(webnlg_original), "Nb. Data-Text Pairs": get_num_data_text(webnlg_original), "Nb. Domains": 19, "Nb. Attributes": get_num_attr(webnlg_original, "webnlg"), "Nb. Input Patterns": get_num_input_pattern(webnlg_original, "webnlg"), "Nb. Input / Nb Input Pattern": get_num_input(webnlg_original)/get_num_input_pattern(webnlg_original, "webnlg")}}
-#     analysis_df = pd.DataFrame(analysis)
-#     print(analysis_df)
+    analysis = {"ax": {"Nb. Input": get_num_input(ax), "Nb. Data-Text Pairs": get_num_data_text(ax), "Nb. Domains": 4, "Nb. Attributes": get_num_attr(ax, "ax"), "Nb. Input Patterns": get_num_input_pattern(ax, "ax"), "Nb. Input / Nb Input Pattern": get_num_input(ax)/get_num_input_pattern(ax, "ax")},
+               "webnlg": {"Nb. Input": get_num_input(webnlg), "Nb. Data-Text Pairs": get_num_data_text(webnlg), "Nb. Domains": 10, "Nb. Attributes": get_num_attr(webnlg, "webnlg"), "Nb. Input Patterns": get_num_input_pattern(webnlg, "webnlg"), "Nb. Input / Nb Input Pattern": get_num_input(webnlg)/get_num_input_pattern(webnlg, "webnlg")},
+               "webnlg_original": {"Nb. Input": get_num_input(webnlg_original), "Nb. Data-Text Pairs": get_num_data_text(webnlg_original), "Nb. Domains": 19, "Nb. Attributes": get_num_attr(webnlg_original, "webnlg"), "Nb. Input Patterns": get_num_input_pattern(webnlg_original, "webnlg"), "Nb. Input / Nb Input Pattern": get_num_input(webnlg_original)/get_num_input_pattern(webnlg_original, "webnlg")}}
+    analysis_df = pd.DataFrame(analysis)
+    print(analysis_df)
     
-    # average, median, min, max = get_text_len(ax)
-    # print("AX: ", average, median, min, max)
-    # average, median, min, max = get_text_len(webnlg)
-    # print("WebNLG_ger: ", average, median, min, max)
-    # average, median, min, max = get_text_len(webnlg_original)
-    # print("WebNLG_original: ", average, median, min, max)
+    average, median, min, max = get_text_len(ax)
+    print("AX: ", average, median, min, max)
+    average, median, min, max = get_text_len(webnlg)
+    print("WebNLG_ger: ", average, median, min, max)
+    average, median, min, max = get_text_len(webnlg_original)
+    print("WebNLG_original: ", average, median, min, max)
     
-    # average, median, min, max = get_sent_len(ax)
-    # print("AX: ", average, median, min, max)
-    # average, median, min, max = get_sent_len(webnlg)
-    # print("WebNLG_ger: ", average, median, min, max)
-    # average, median, min, max = get_sent_len(webnlg_original)
-    # print("WebNLG_original: ", average, median, min, max)
+    average, median, min, max = get_sent_len(ax)
+    print("AX: ", average, median, min, max)
+    average, median, min, max = get_sent_len(webnlg)
+    print("WebNLG_ger: ", average, median, min, max)
+    average, median, min, max = get_sent_len(webnlg_original)
+    print("WebNLG_original: ", average, median, min, max)
     
     types, tokens, cttr = types_and_tokens(ax)
     print("AX: ", types, tokens, cttr)
