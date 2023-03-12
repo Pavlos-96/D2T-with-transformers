@@ -3,11 +3,11 @@
 This repository contains the code that was used for training and testing the systems described in the masters thesis "A Corpus Construction Framework
 for the Data-to-Text Task".
 
-The directories first_manual_eval, second_manual_eval and human_eval contain the data that was used for the evaluations of the systems.
+The directories first_manual_eval/, second_manual_eval/ and human_eval/ contain the data that was used for the evaluations of the systems.
 
-The directory predictions contains the predictions of the systems on the test sets of all three datasets used in the thesis.
+The directory predictions/ contains the predictions of the systems on the test sets of all three datasets used in the thesis.
 
-The directory src contains the source code.
+The directory src/ contains the source code.
 
 To create the data files needed for the WebNLG data set, first you have to clone the following git repository into the main directory:
 
